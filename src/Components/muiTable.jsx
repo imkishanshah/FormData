@@ -94,28 +94,17 @@
 import React, { useMemo, useState, useEffect } from "react";
 import { useTable, useGlobalFilter, usePagination } from "react-table";
 import "./table.css";
-import {
-  TableContainer,
-  Paper,
-  Table,
-  TableHead,
-  TableRow,
-  TableCell,
-  TableBody,
-} from "@mui/material";
 import COLUMN from "./columns";
 import axios from "axios";
 import Globalfilter from "./globalfilter";
 
-const MuiTable = (props) => {
-  // const [list, setList] = useState([]);
+const MuiTable = () => {
   const [display, setDisplay] = useState([]);
   useEffect(() => {
     axios({
       url: "https://jsonplaceholder.typicode.com/comments",
     })
       .then((response) => {
-        // setList(response.data);
         setDisplay(response.data);
       })
       .catch((error) => {

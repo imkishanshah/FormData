@@ -1,20 +1,7 @@
-import MuiButton from "./Components/button";
-import "./App.css";
-import MuiTypography from "./Components/muiTypography";
-import MuiTextfield from "./Components/textfield";
-import MuiSelect from "./Components/muiSelect";
-// import MuiRadiobutton from "./Components/muiRadiobutton";
-import MuiCheckbox from "./Components/muiCheckbox";
-import MuiStepper from "./Components/muiStepper";
 import { useState } from "react";
-import MuiForm from "./Components/muiForm";
 import Header from "./Components/header";
 import Footer from "./Components/footer";
-import Radiobutton from "./Components/radiobutton";
 import Cardcomponent from "./Components/cardcomponent";
-import MuiTable from "./Components/muiTable";
-
-import DataTable from "./Components/dataTable";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -30,12 +17,9 @@ function App() {
   };
 
   return (
-    // <BrowserRouter>
-    //   <div className="App">
     <div>
       <Header />
-      // {/* <MuiTable /> */}
-      // {/* <DataTable /> */}
+
       <Cardcomponent
         onChange1={handleChangeincrement}
         onChange2={handleChangedecrement}
@@ -44,7 +28,6 @@ function App() {
       />
       <Footer />
     </div>
-    // </BrowserRouter>
   );
 }
 

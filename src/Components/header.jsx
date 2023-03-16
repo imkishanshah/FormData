@@ -1,11 +1,11 @@
-import { Button, Stack, SvgIcon, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
 import Group187 from "../assets/Group 187.svg";
 
 import MuiButton from "./button";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   function onClickTable() {
