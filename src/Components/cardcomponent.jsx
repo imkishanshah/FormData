@@ -21,8 +21,6 @@ const basicSchema = yup.object().shape({
   company: yup.string().required("company is Required"),
 });
 
-// const axios = axios.post("http://localhost:3002/Data");
-
 const Cardcomponent = ({ onChange1, onChange2, value, component }) => {
   const [data, setData] = useState([]);
   const [finalData, setFinalData] = useState([]);

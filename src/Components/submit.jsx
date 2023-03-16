@@ -1,9 +1,8 @@
-import { margin, Stack, width } from "@mui/system";
+import { Stack } from "@mui/system";
 import { Box } from "@mui/system";
-import { Typography, TextField } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import Group37301 from "../assets/Group 37301.svg";
-import { Margin } from "@mui/icons-material";
 import MuiButton from "./button";
 
 const Submit = ({ data, onChange }) => {
