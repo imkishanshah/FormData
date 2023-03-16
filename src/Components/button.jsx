@@ -41,4 +41,3 @@ export default function GlobalThemeVariants({
   );
 }
 export { CustomTheme };
-// export { Theme };
